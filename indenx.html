@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!-- saved from url=(0064)https://ecs-162-spring-2022.profamenta.repl.co/wiley/museum.html -->
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Projectile Simulator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="resetcss" type="text/css" href="reset.css" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <style type="text/css">
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+      @font-face {
+        font-family: Roboto;
+        src: url("chrome-extension://mcgbeeipkmelnpldkobichboakdfaeon/css/Roboto-Regular.ttf");
+      }
+    </style>
+    <script src="simulator.js"></script>
+  </head>
+
+  <body>
+    <div class="sim-area">
+      <div class="stats-div">
+        <h4 class="stats" id="r">Horizontal Distoance:</h4>
+        <h4 class="stats" id="t">Time of flight:</h4>
+        <h4 class="stats" id="h">Max height:</h4>
+      </div>
+      <div id="dot"></div>
+    </div>
+    <div class="information">
+      <div class="radio-gravity">
+        <h4>Accelaration due to Gravity (m/s^2):</h4>
+        <input type="radio" name="gravity" value="3.59" />Mercury
+        <input type="radio" name="gravity" value="8.87" />Venus
+        <input type="radio" name="gravity" value="9.81" checked />Earth
+        <input type="radio" name="gravity" value="3.77" />Mars
+        <input type="radio" name="gravity" value="25.95" />Jupiter
+        <input type="radio" name="gravity" value="11.08" />Saturn
+        <input type="radio" name="gravity" value="10.67" />Uranus
+        <input type="radio" name="gravity" value="14.07" />Neptune
+        <input type="radio" name="gravity" value="-1" />Custom
+        <input type="number" id="custom" value="0" />
+      </div>
+      <div>
+        <h4 class="label">Velocity:</h4>
+        <input type="number" id="vel" value="40" />
+        <h4 class="label">Angle on Throw:</h4>
+        <input type="number" id="deg" value="45" />
+      </div>
+      <button class="submit" onclick="getInfo()">Start</button>
+    </div>
+  </body>
+</html>
