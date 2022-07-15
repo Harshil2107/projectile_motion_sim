@@ -14,11 +14,14 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
 .radio-gravity{
     display: flex;
+    flex-wrap: wrap;
+
     gap: 5px;
     justify-content: center;
 }
@@ -57,4 +60,16 @@
   .stats-div{
     padding-top: 15px;
     padding-left: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .vel-grav-div{
+    padding-top: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
   }
